@@ -11,11 +11,8 @@ namespace PatternOpenClosedTotal.Class
     {
         public void Calculate(Account account)
         {
-            if (account.Type == "Зарплатный")
-            {
-                // расчет процентной ставк зарплатного аккаунта по правилам банка
-                account.Interest = account.Balance * 0.5;
-            }
+            // расчет процентной ставк зарплатного аккаунта по правилам банка
+            account.Interest = account.Balance * 0.5;
         }
     }
 }
